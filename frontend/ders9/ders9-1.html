@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,4 +78,85 @@
         </div>
     </div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+        }
+        .row{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row *{
+            flex-shrink: 0;
+        }
+        
+        .col{
+            flex: left;
+        }
+        .box1{
+            margin: 10px;
+            width: 250px;
+            height: 250px;
+            border: 4px solid black;
+            background: green;
+            position: relative;
+        }
+        .box1::after{
+            content: "after";
+            width: 50px;
+            height: 50px;
+            background: red;
+            border: 4px solid black;
+            position: absolute;
+            top: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="box1"></div>
+        </div>
+        <div class="col">
+            <div class="box1"></div>
+        </div>
+        <div class="col">
+            <div class="box1"></div>
+        </div>
+        <div class="col">
+            <div class="box1"></div>
+        </div>
+        <div class="col">
+            <div class="box1"></div>
+        </div>
+        <div class="col">
+            <div class="box1"></div>
+        </div>
+    </div>
+</body>
+>>>>>>> 757e81e814f75240c56f46ccb7285e8a43326ffb
 </html>

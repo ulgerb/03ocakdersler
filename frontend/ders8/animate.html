@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -194,4 +195,202 @@
     </main>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+
+        }
+        .toplar{
+            width: 200px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: rotateball 4s infinite ;
+        }
+        @keyframes rotateball {
+            0%{}
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .toplar .top1{
+            width: 50px;
+            height: 50px;
+            background: red;
+            border: 4px solid black;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(0px,-50px);
+        }
+        .toplar .top2{
+            width: 50px;
+            height: 50px;
+            background: green;
+            border: 4px solid black;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-40px,20px);
+            
+        }
+        .toplar .top3{
+            width: 50px;
+            height: 50px;
+            background: cornflowerblue;
+            border: 4px solid black;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(40px,20px);
+
+        }   
+        /* KUTU */
+        .arrow{
+            display: flex;
+            perspective: 600px;
+        }
+        .kutu{
+            width: 200px;
+            height: 150px;
+            background: chocolate;
+            border: 4px solid black;
+            animation: mevlanaa 4s 4s alternate-reverse;
+            transform-style: preserve-3d;
+            transition: all 2s;
+            z-index: 10;
+        }
+        .kutu:hover{
+            transform: rotate3d(3, 6, 1, 45deg) translate3d(20px,0px,50px);
+        }
+        @keyframes mevlana {
+            0%{}
+            25%{
+                transform: rotate(50deg);
+            }
+            50%{
+                transform: rotate(80deg) translate(100px);
+            }
+            75%{
+                transform: rotate(180deg) scale(1.2);
+
+            }
+            100%{
+                background: blue;
+            }
+        }
+        
+        .ucgen-con{
+            margin: -70px 0px 0px -5px;
+            width: min-content;
+            height: 300px;
+            overflow: hidden;
+            border-left: 4px solid black;
+        }
+        .ucgen-con .ucgen{
+            width: 220px;
+            height: 220px;
+            background: yellow;
+            border: 4px solid black;
+            transform:translate(-110px, 40px) rotate(45deg) ;
+        }
+        
+        .button{
+            width: 200px;
+            height: 80px;
+            border: 4px solid black;
+            border-radius: 30px;
+            position: relative;
+            background: green;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .button:hover{
+            animation: button .2s infinite;
+        }
+        @keyframes button {
+            0%{}
+            25%{
+                transform: translate(2px, -5px);
+            }
+            50%{
+                transform: translate(4px, 5px);
+            }
+            75%{
+                transform: translate(-2px, -5px);
+            }
+            100%{
+                transform: translate(-4px, 5px);
+            }
+        }
+        .button p{
+            padding-top: 20px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 800;
+            position: relative;
+            z-index: 10;
+            color: white;
+        }
+        
+        .button .btn-blue{
+            width: 0%;
+            height: 100%;
+            background: blue;
+            position: absolute;
+            top: 0;
+            transition: all 2s;
+        }
+        .button:hover .btn-blue{
+            width: 100%;
+           
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <div class="toplar">
+                <div class="top1"></div>
+                <div class="top2"></div>
+                <div class="top3"></div>
+            </div>
+
+            
+            <div class="arrow">
+                <div class="kutu"></div>
+                <div class="ucgen-con">
+                    <div class="ucgen"></div>
+                </div>
+            </div>
+
+            <div class="button">
+                <p>
+                    Button
+                </p>
+                <div class="btn-green"></div>
+                <div class="btn-blue"></div>
+            </div>
+            
+        </div>
+    </main>
+    
+</body>
+>>>>>>> 757e81e814f75240c56f46ccb7285e8a43326ffb
 </html>

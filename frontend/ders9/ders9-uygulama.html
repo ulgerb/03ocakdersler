@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -215,4 +216,223 @@
     <!-- MAIN END -->
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ders9 uygulama</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+    
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        /* HEADER START */
+        header {
+            width: 100%;
+        }
+    
+        header nav {
+            width: 100%;
+            background: lightseagreen;
+        }
+    
+        header nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+    
+        header nav ul li {
+            display: flex;
+            align-items: center;
+            width: auto;
+            height: 80px;
+            margin: 0px 20px;
+        }
+    
+        header nav ul li a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 24px;
+            font-weight: 800;
+        }
+        /* HEADER END */
+        main{}
+        main .main-con{
+            width: 100%;
+        }
+        main .main-con .content1{
+            display: flex;
+        }
+        main .main-con .content1 .img-con{
+            padding-left: 20px;
+            width: 50%;
+            height: 400px;
+        }
+        main .main-con .content1 .img-con img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* CARD START */
+        main .main-con .content1 .card-con{
+            padding: 0px 0px 0px 20px;
+            width: 50%;
+            height: 400px;
+        }
+        .card-con .card,.card-con2 .card{
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-con2{
+            padding-left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card-con2 .card{
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 300px;
+            border: 4px solid black;
+        }
+        .card-con .card h4{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .card-con .card p{}
+        .card-con .card .button-con{
+            margin-top: 20px;
+            width: 80%;
+            padding: 20px;
+            border: 4px solid black;
+            display: flex;
+            justify-content: space-around;
+        }
+        .card-con .card .button-con button{}
+        
+        /* CARD END */
+
+        /* MEDIA START */
+        @media screen and (max-width:1024px) {
+            main .main-con .content1{
+                display: block;
+            }
+            main .main-con .content1 .card-con{
+                padding: 0px 0px 0px 5px;
+                width: 100%;
+                height: 400px;
+            }
+            main .main-con .content1 .img-con{
+                padding-left: 20px;
+                width: 100%;
+                height: 400px;
+            }
+            .card-con2{
+                padding-left: 15px;
+            }
+        }
+        
+        @media screen and (max-width:546px) {
+            header nav {
+                width: 100%;
+                background: purple;
+            }
+    
+            header nav ul {
+                display: block;
+            }
+    
+            header nav ul li {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER START -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="">Hakkında</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main>
+        <div class="main-con">
+            <!-- CONTENT 1 START -->
+            <div class="content1">
+                <div class="img-con">
+                    <img src="img/car4.webp" alt="">
+                </div>
+                <div class="card-con">
+                    <div class="card">
+                        <h4>Title</h4>
+                        <p> fugit temporibus quos, at, ratione tempora rerum accusantium id nemo dolorem? Numquam, incidunt possimus maxime nostrum tempore non beatae nobis deserunt dicta magnam facere. Molestias ab aspernatur iste assumenda inventore amet deleniti doloremque pariatur esse distinctio recusandae eveniet ut doloribus architecto labore, odio ipsam! Iusto nam magni rerum voluptatibus quia et autem reiciendis </p>
+                        <div class="button-con">
+                            <button>Button</button>
+                            <button>Button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTENT 1 END -->
+            <!-- CONTENT 2 START -->
+            <div class="content2">
+                <div class="card-con2">
+                    <div class="card">
+                        <h4>Title</h4>
+                        <p> fugit temporibus quos, at, ratione tempora rerum accusantium id nemo dolorem? Numquam, incidunt possimus maxime
+                            nostrum tempore non beatae nobis deserunt dicta magnam facere. Molestias ab aspernatur iste assumenda inventore
+                            amet deleniti doloremque pariatur esse distinctio recusandae eveniet ut doloribus architecto labore, odio ipsam!
+                            Iusto nam magni rerum voluptatibus quia et autem reiciendis </p>
+                    </div>
+                    <div class="card">
+                        <h4>Title</h4>
+                        <p> fugit temporibus quos, at, ratione tempora rerum accusantium id nemo dolorem? Numquam, incidunt possimus maxime
+                            nostrum tempore non beatae nobis deserunt dicta magnam facere. Molestias ab aspernatur iste assumenda inventore
+                            amet deleniti doloremque pariatur esse distinctio recusandae eveniet ut doloribus architecto labore, odio ipsam!
+                            Iusto nam magni rerum voluptatibus quia et autem reiciendis </p>
+                    </div>
+                    <div class="card">
+                        <h4>Title</h4>
+                        <p> fugit temporibus quos, at, ratione tempora rerum accusantium id nemo dolorem? Numquam, incidunt possimus maxime
+                            nostrum tempore non beatae nobis deserunt dicta magnam facere. Molestias ab aspernatur iste assumenda inventore
+                            amet deleniti doloremque pariatur esse distinctio recusandae eveniet ut doloribus architecto labore, odio ipsam!
+                            Iusto nam magni rerum voluptatibus quia et autem reiciendis </p>
+                    </div>
+                    <div class="card">
+                        <h4>Title</h4>
+                        <p> fugit temporibus quos, at, ratione tempora rerum accusantium id nemo dolorem? Numquam, incidunt possimus maxime
+                            nostrum tempore non beatae nobis deserunt dicta magnam facere. Molestias ab aspernatur iste assumenda inventore
+                            amet deleniti doloremque pariatur esse distinctio recusandae eveniet ut doloribus architecto labore, odio ipsam!
+                            Iusto nam magni rerum voluptatibus quia et autem reiciendis </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- CONTENT 2 END -->
+        </div>
+    </main>
+    <!-- MAIN END -->
+    
+</body>
+>>>>>>> 757e81e814f75240c56f46ccb7285e8a43326ffb
 </html>
