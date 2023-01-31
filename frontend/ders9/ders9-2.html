@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 100%;
+        }
+        header nav{
+            width: 100%;
+            background: lightseagreen;
+        }
+        header nav ul{
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        header nav ul li{
+            display: flex;
+            align-items: center;
+            width: auto;
+            height: 80px;
+            margin: 0px 20px;
+        }
+        header nav ul li a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 24px;
+            font-weight: 800;
+        }
+        @media screen and (max-width:546px) {
+            header nav{
+                width: 100%;
+                background: purple;
+            }
+            header nav ul{
+                display: block;
+            }
+            header nav ul li{
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="">Hakkında</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

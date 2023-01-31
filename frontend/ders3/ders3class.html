@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>class ve id</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+		/* classlara özellik vermek için .classadı olarak yazılmalıdır */
+		/* id attribute sahim olan etiketler class'a göre öncelik değeri taşırlar  */
+		#box{
+			font-size: 16px; /* yazı boyutu */
+			font-weight: 900; /* yazı kalınlığı */
+			font-family: 'Roboto', sans-serif; /* yazı tipi, ailesi */
+			letter-spacing: 5px; /* harf aralarını açar */
+			line-height: 50px; /* yazılar arası uzunluğu arttırır */
+			color: red; /* yazı rengi */
+			background: yellow; /* arkaplan rengi */
+			border: 5px double black; /* çerçeve */
+			border-radius: 50px; /* border köşelerine radius verir */
+			border-top-left-radius: 10px;
+
+		}
+
+		.borderbox{
+			border: 4px solid black;
+			border-top-right-radius: 20px;
+		}
+
+		.box1{
+			background: green;
+			font-size: 16px;
+			letter-spacing: 1px;
+			line-height: 20px;
+		}
+		.box2{
+			color: red;
+			font-size: 20px;
+			letter-spacing: 2px;
+			line-height: 24px;
+		}
+
+		#box1{
+			background: red;
+		}
+		.box200{
+			width: 200px;
+			height: 300px;
+		}
+		.box3{
+			background: green;
+			font-size: 33px;
+			letter-spacing: -4px;
+			line-height: 28px;
+		}
+		.box3 #box4{
+			width: 100px;
+			height: 100px;
+			background: purple;
+		}
+		#box4{
+			width: 900px;
+			height: 200px;
+			background: green;
+			font-size: 28px;
+			letter-spacing: 4px;
+			line-height: 32px;
+		}
+		#box5{
+			width: 50%;
+			height: 150px;
+			background: orange;
+			font-size: 32px;
+			letter-spacing: 5px;
+			line-height: 36px;
+		}
+		.box6{
+			width: 400px;
+			height: 200px;
+			background: yellow;
+			font-size: 36px;
+			letter-spacing: 6px;
+			line-height: 40px;
+		}
+		.box7{
+			background: blue;
+			font-size: 40px;
+			letter-spacing: 7px;
+			line-height: 44px;
+		}
+	</style>
+</head>
+<body>
+	<h4>
+		Tanımladığımı her kutu için; 
+		4px kalınlığında border, yukarı sağ kısmı 20px radius,
+		içindeki yazılar; box1den box7 başlangıç 16px, 4'er px boyutu artıcak,
+		harf aralığı 1'er artıcak
+		yazı uzunluğu 20den başlayıp 4'er artıcak
+	</h4>
+	<h2 id="box" class="box1">Kutular burası başlık <br> Başlık1</h2>
+	<div class="box1 borderbox" id="box1">Kutu1</div>
+	<div class="box2 borderbox">Kutu2</div>
+	<div class="box3 box200 borderbox">
+		<div id="box4">asdasd</div>
+	Kutu3</div>
+	<div id="box4" class="borderbox">Kutu4</div>
+	<div id="box5" class="borderbox">Kutu5</div>
+	<div class="box6 borderbox">Kutu6</div>
+	<div class="box7 box200 borderbox">Kutu7</div>
+
+	<input type="radio" value="kadın" name="">
+</body>
+</html>

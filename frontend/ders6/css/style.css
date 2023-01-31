@@ -1,0 +1,276 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+ }
+
+ .border4 {
+     border: 4px solid black;
+ }
+
+ .maincon {
+     display: flex;
+ }
+
+ .mainbox1 {
+     margin: 30px;
+     width: 500px;
+     height: 400px;
+     background: darkorange;
+ }
+
+ .mainbox1 .hidbox1 {
+     height: 50%;
+     display: flex;
+     align-items: center;
+     padding-left: 20px;
+ }
+
+ .mainbox1 .hidbox2 {
+     height: 50%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .mainbox1 .box1 {
+     width: 200px;
+     height: 180px;
+     background: sienna;
+     display: flex;
+     justify-content: space-around;
+     padding-top: 8px;
+ }
+
+ .mainbox1 .box2 {
+     width: 200px;
+     height: 180px;
+     background: sienna;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .mainbox1 .box3 {
+     width: 200px;
+     height: 180px;
+     background: sienna;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .mainbox1 .bx1 {
+     width: 80px;
+     height: 160px;
+     background: gray;
+ }
+
+ .mainbox1 .bx2 {
+     width: 80px;
+     height: 60px;
+     background: gray;
+ }
+
+ .mainbox1 .bx3 {
+     width: 180px;
+     height: 60px;
+     background: gray;
+ }
+
+ .mainbox1 .bx4 {
+     width: 100px;
+     height: 160px;
+     background: gray;
+ }
+
+ .mainbox2 {
+     margin: 30px;
+     width: 500px;
+     height: 400px;
+     background: darkorange;
+     display: flex;
+ }
+
+ .mainbox2 .hidbox1 {
+     width: 40%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .mainbox2 .hidbox2 {
+     width: 60%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+ }
+
+ .mainbox2 .hidbox3 {
+     display: flex;
+     justify-content: space-between;
+     padding-right: 25px;
+ }
+
+ .mainbox2 .box1 {
+     width: 180px;
+     height: 360px;
+     background: sienna;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .mainbox2 .box2 {
+     width: 270px;
+     height: 110px;
+     background: sienna;
+ }
+
+ .mainbox2 .box3 {
+     width: 270px;
+     height: 110px;
+     background: sienna;
+ }
+
+ .mainbox2 .box4 {
+     width: 130px;
+     height: 100px;
+     background: sienna;
+ }
+
+ .mainbox2 .hidbx1 {
+     padding-right: 10px;
+     height: 50%;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+ }
+
+ .mainbox2 .hidbx2 {
+     height: 50%;
+     display: flex;
+     justify-content: center;
+ }
+
+ .mainbox2 .bx1 {
+     width: 160px;
+     height: 160px;
+     background: gray;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .mainbox2 .bx2 {
+     width: 80px;
+     height: 40px;
+     background: gray;
+ }
+
+ .mainbox2 .b1 {
+     width: 60px;
+     height: 140px;
+     background: chartreuse;
+ }
+
+ .mainbox3 {
+     margin: 30px;
+     width: 1000px;
+     height: 250px;
+     background: darkorange;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .mainbox3 .box {
+     width: 200px;
+     height: 200px;
+     background: sienna;
+ }
+
+ .mainbox3 .box1 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .mainbox3 .box2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .mainbox3 .box3 {
+     display: flex;
+ }
+
+ .mainbox3 .box4 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .mainbox3 .hidbx1 {
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .mainbox3 .hidbx2 {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .mainbox3 .bx1 {
+     width: 80px;
+     height: 80px;
+     background: gray;
+ }
+
+ .mainbox3 .bx2 {
+     width: 150px;
+     height: 70px;
+     background: gray;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     padding-right: 10px;
+ }
+
+ .mainbox3 .bx3 {
+     width: 80px;
+     height: 180px;
+     background: gray;
+ }
+
+ .mainbox3 .bx4 {
+     width: 80px;
+     height: 80px;
+     background: gray;
+ }
+
+ .mainbox3 .bx5 {
+     width: 180px;
+     height: 80px;
+     background: gray;
+ }
+
+ .mainbox3 .bx6 {
+     width: 80px;
+     height: 80px;
+     background: gray;
+ }
+
+ .mainbox3 .b1 {
+     width: 30px;
+     height: 30px;
+     background: chartreuse;
+ }
