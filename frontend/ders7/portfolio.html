@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+        div,h1,h2,h3,h4,h5,h6,p,span,a, li{
+            font-family: 'Poppins', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /* HEADER START */
+        header{}
+        .header-nav{
+            width: 100%;
+            height: 8vh;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.27);
+        }
+        .header-nav ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-nav ul li{
+            height: 8vh;
+            font-size: 3vh;
+            padding: 0px 10px;
+            display: flex;
+            align-items: center;
+        }
+        .header-nav ul li a{
+            padding-top: 10px;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .header-nav ul li:hover{
+            background: cornflowerblue;
+        }
+        /* HEADER END */
+
+        /* FOOTER START */
+        footer{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            bottom: 0;
+        }
+        .footer{
+            width: 70%;
+        }
+        .footer-list{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-list li{
+            height: 60px;
+            font-size: 16px;
+            padding: 0px 10px;
+            display: flex;
+            align-items: center;
+        }
+        .footer-list li a{
+            color: rgb(127, 127, 127);
+        }
+        .footer-list li a:hover{
+            color: rgb(66, 66, 66);
+        }
+        .footer-social{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        .footer-social li{
+            margin: 0px 10px;
+            width: 50px;
+        }
+        .footer-social li a{}
+        /* FOOTER END */
+
+        /* MAIN START */
+
+        main{}
+        main .container{}
+        .home{
+            width: 100%;
+            display: flex;
+            height: 90vh;
+            background: aliceblue;
+        }
+        .home .home-left{
+            padding: 20px 30px 20px 80px;
+            width: 45%;
+            display: flex;
+            align-items: center;
+        }
+        .home .home-left .home-content{
+            
+        }
+        .home-content h2{
+            font-size: 34px;
+        }
+        .home-content p{
+            margin-top: 10px;
+            font-size: 18px;
+            color: #222222;
+        }
+        
+        .home-content button{
+            margin-top: 20px;
+            width: 100px;
+            height: 40px;
+            background: rgba(0, 0, 255, 0.764);
+            border-radius: 20px;
+            border: none;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.638);
+            cursor: pointer;
+        }
+        .home-content button:hover{
+            background: rgba(0, 0, 255, 0.879);
+        }
+        .home-content button:active{
+            background: white;
+        }
+        .home-social .footer-social{
+            margin-top: 30px;
+            padding: 0;
+        }
+        
+        .home .home-right{
+            width: 50%;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .home-img-con{
+            width: 400px;
+            height: 50vh;
+        }
+        .home-img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .home-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        
+        /* MAIN END */
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="">Hakkında</a></li>
+                <li><a href="">Yetenekler</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="home">
+                <div class="home-left">
+                    <div class="home-content">
+                        <h2>I'm Berkay Ülger, Fullstack Developer</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <button class="home-button"><a href="" target="">About Me</a></button>
+                        <div class="home-social">
+                            <ul class="footer-social">
+                                <li><a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px"
+                                            height="30px" viewBox="0 0 48 48" version="1.1">
+                            
+                                            <title>Facebook-color</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <defs>
+                            
+                                            </defs>
+                                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+                                                    <path
+                                                        d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"
+                                                        id="Facebook">
+                            
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px"
+                                            height="30px" viewBox="0 0 48 48" version="1.1">
+                            
+                                            <title>Facebook-color</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <defs>
+                            
+                                            </defs>
+                                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+                                                    <path
+                                                        d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"
+                                                        id="Facebook">
+                            
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px"
+                                            height="30px" viewBox="0 0 48 48" version="1.1">
+                            
+                                            <title>Facebook-color</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <defs>
+                            
+                                            </defs>
+                                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+                                                    <path
+                                                        d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"
+                                                        id="Facebook">
+                            
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px"
+                                            height="30px" viewBox="0 0 48 48" version="1.1">
+                            
+                                            <title>Facebook-color</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <defs>
+                            
+                                            </defs>
+                                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+                                                    <path
+                                                        d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"
+                                                        id="Facebook">
+                            
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-right">
+                    <div class="home-img-con">
+                        <div class="home-img">
+                            <img src="img/download.jpg" alt="">
+                            <div style="width: 300px; height: 300px; background: #000;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <ul class="footer-list">
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="">Hakkında</a></li>
+                <li><a href="">Yetenekler</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+            <!-- icons -->
+            <ul class="footer-social">
+                <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px"
+                        viewBox="0 0 48 48" version="1.1">
+                    
+                        <title>Facebook-color</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+                    
+                        </defs>
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+                                <path
+                                    d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"
+                                    id="Facebook">
+                    
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a></li>
+                <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px"
+                        viewBox="0 0 48 48" version="1.1">
+                    
+                        <title>Facebook-color</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+                    
+                        </defs>
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+                                <path
+                                    d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"
+                                    id="Facebook">
+                    
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a></li>
+                <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px"
+                        viewBox="0 0 48 48" version="1.1">
+                    
+                        <title>Facebook-color</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+                    
+                        </defs>
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+                                <path
+                                    d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"
+                                    id="Facebook">
+                    
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a></li>
+                <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px"
+                        viewBox="0 0 48 48" version="1.1">
+                    
+                        <title>Facebook-color</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+                    
+                        </defs>
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+                                <path
+                                    d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"
+                                    id="Facebook">
+                    
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

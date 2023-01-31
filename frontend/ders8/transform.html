@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root{
+            /* RENKLER */
+            --box1-bg:orange;
+            --box2-bg:red;
+            --box3-bg:yellow;
+            --box4-bg:violet;
+            --box5-bg:blue;
+            --box6-bg:purple;
+            /* YAZI BOYUTU */
+            --fs-20:20px;
+            --fs-30:30px;
+            --fs-40:40px;
+            --box1-fs: 22px;
+            --box-wt: 150px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            width: 100%;
+            height: auto;
+        }
+
+        .box1 {
+            width: calc( var(--box-wt) *2 );
+            height: 200px;
+            border: 4px solid black;
+            background: var(--box1-bg);
+            float: left;
+            font-size: calc(2*var(--box1-fs));
+        }
+
+        .box2 {
+            width: calc( var(--box-wt) *3 );
+            height: 200px;
+            border: 4px solid black;
+            background: var(--box2-bg);
+            float: left;
+
+        }
+
+        
+
+        .box3 {
+            width: calc( var(--box-wt) *4 );
+            height: 200px;
+            border: 4px solid black;
+            background: yellow;
+            float: left;
+            transition: all 1s;
+        }
+
+        
+
+        .box4 {
+            width: calc( var(--box-wt) *5 );
+            height: 200px;
+            font-size: var(--fs-40);
+            border: 4px solid black;
+            background: blueviolet;
+            float: left;
+            position: relative;
+            transition: all 2s ease-in;
+        }
+
+       
+
+        .box5 {
+            width: calc( var(--box-wt) *6 );
+            height: 200px;
+            border: 4px solid black;
+            background: blue;
+            float: left;
+            transition: all 2s;
+        }
+        .box6 {
+            width: calc( var(--box-wt) *7 );
+            height: 200px;
+            border: 4px solid black;
+            background: chocolate;
+            float: left;
+            transition: all 1s;
+        }
+        main>div{
+            transition: all 1s;
+        }
+        .box1:hover{
+            transform: translate(0px, 100px);
+        }
+        .box2:hover{
+            transform: rotate(9060deg);
+        }
+        .box3:hover{
+            transform: scale(2);
+        }
+        .box4:hover{
+            color: white;
+            background: orange;
+        }
+        .box5:hover{
+            transform: rotate(180deg) translate(0px, 200px);
+        }
+        .box6:hover{
+            background: fuchsia;
+            width: 100px;
+            height: 400px;
+            transform: rotate(-90deg) translate(0px,100px);
+        }
+        .fa-solid.fa-tv{
+            font-size: 60px;
+            color: red;
+        }
+        .box.elma{
+            margin-top: 10px;
+            width: calc( var(--box-wt) *2 );
+            height: 200px;
+            background: green;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="width: 500px; height: 500px; border: 5px solid black;">
+        <div class="box elma">
+
+        </div>
+        <div class="box armut"></div>
+    </div>
+    
+    <main>
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, vel.
+        </div>
+        <div class="box2"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div class="box3">
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-apple fa-tv"></i>
+            <div></div>
+        </div>
+        <div class="box4">
+            <i style="font-size: 40px; color: aqua;" class="fab fa-instagram" aria-hidden="true"></i>
+
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </main>
+    <ul style="font-size: 50px; float: none;">
+        <li>1.kutu 100px aşağı gitsin, 1s</li>
+        <li>2.kutu 360 derece dönsün 1.4s</li>
+        <li>3.kutu boyutu 2 katı olsun</li>
+        <li>4.kutu rengi turuncuya yazı rengi beyaza dönsün</li>
+        <li>5.kutu 180 derece dönsün ve 200px yukarı gitsin</li>
+        <li>6.kutu renk değişsin, width ve height artsın, 90deg dönsün ve aşağıya 100px gitsin</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        main{
+            display: flex;
+        }
+        .box1{
+            width: 100%;
+            height: 300px;
+            background: green;
+            border: 4px solid black;
+        }
+        @media screen and (max-width:1024px) {
+            .box1{
+                background: red;
+            }
+        }
+        @media screen and (max-width:767px) {
+            main{
+                display: block;
+            }
+            .box1{
+                width: 50%;
+                margin: 20px;
+                animation: rotatebox .5s infinite;
+            }
+            @keyframes rotatebox {
+                0%{}
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    1)araları açılsın genişlikleri yarıya düşsün 
+    2)animasyon verilicek ve kutular kendi etrafında dönsün
+    <main>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </main>
+    
+</body>
+</html>

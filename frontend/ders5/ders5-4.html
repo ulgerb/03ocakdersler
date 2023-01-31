@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .mainbox, .boxgr, .boxred{
+            border: 5px solid black;
+        }
+        .mainbox{
+            width: 600px;
+            height: 500px;
+            background: gray;
+            border-radius: 20px;
+        }
+        .hidbox1{
+            height: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .hidbox2{
+            height: 50%;
+            display: flex;
+            align-items: center;  
+            justify-content: end;  
+        }
+        
+        .boxgr{
+            margin: 20px;
+            width: 200px;
+            height: 180px;
+            background: green;
+        }
+        .boxend{
+            display: flex;
+            justify-content: end;
+        }
+        .boxcenter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .boxred{
+            margin: 10px;
+            width: 100px;
+            height: 80px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>uygulama 4</h2>
+
+    <div class="mainbox">
+        <div class="hidbox1">
+            <div class="boxgr boxend">
+                <div class="boxred"></div>
+            </div>
+        </div>
+        <div class="hidbox2">
+            <div class="boxgr boxcenter">
+                <div class="boxred"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
