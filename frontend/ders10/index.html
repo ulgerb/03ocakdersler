@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        .rows{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rows>div{
+            border: 4px solid black;
+        }
+        .rows>div>div:nth-child(1){
+            color: red;
+        }
+        .rows>div>div:nth-child(2){
+            background: green;
+        }
+        .rows>div>div:nth-child(3){
+            text-shadow: 2px 2px 5px black;
+        }
+        .rows>div>div:nth-child(4){
+            animation: div4 10s infinite;
+        }
+        @keyframes div4 {
+            0%{}
+            50%{
+                transform: translate(-2px);
+            }
+            100%{
+                transform: translate(2px);
+            }
+        }
+        .rows>div>div:nth-child(5){
+            font-weight: bold;
+            font-style: italic;
+        }
+        .rows ol{
+            background: rgb(215, 215, 215);
+        }
+        .rows ol>li:nth-child(2){
+            background: red;
+        }
+        .rows ol>li:nth-child(3){
+            color: blue;
+        }
+        .rows ol>li:nth-child(4){
+            border: 4px solid black;
+        }
+        .rows ol>li:nth-child(5):hover{
+            animation: li4 2s infinite;
+        }
+        @keyframes li4 {
+            0%{}
+            100%{
+                box-shadow: 0px 0px 30px 10px white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rows">
+        <div>
+            <div>ilk satır, color red</div>
+            <div>ikinci satır, bg green</div>
+            <div>üçüncü satır, text shadow</div>
+            <div>dördüncü satır, animate sağ sol hareket</div>
+            <div>beşinci satır, kalın yazı eğik yazı</div>
+            <ol>
+                <h2>liste</h2>
+                <li>bg red</li>
+                <li>yazı rengi blue</li>
+                <li>border 4px</li>
+                <li>hover yanıp sönsün</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
