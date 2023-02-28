@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <style>
+        .home-demo .item {
+            background: #3f49ff;
+        }
+        .home-demo h2 {
+            color: #FFF;
+            text-align: center;
+            padding: 5rem 0;
+            margin: 0;
+            font-style: italic;
+            font-weight: 300;
+            
+        }
+
+        .owl-prev, .owl-next{
+            display: flex;
+            position: absolute;
+            transform: scale(4) !important;
+        }
+        .owl-prev{
+            top: 70px;
+            left: 0;
+        }
+        .owl-next{
+            top: 70px;
+            right: 0;
+        }
+        .owl-prev:hover,.owl-next:hover{
+            background: rgb(194, 113, 113) !important;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="home-demo">
+        <h3>Carousel</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <h2>box1</h2>
+            </div>
+            <div class="item" style="width: 550px;">
+                <h2>box2</h2>
+            </div>
+            <div class="item" style="width: 400px;">
+                <h2>box3</h2>
+            </div>
+            <div class="item">
+                <h2>box4</h2>
+            </div>
+            <div class="item">
+                <h2>box5</h2>
+            </div>
+            <div class="item">
+                <h2>box6</h2>
+            </div>
+            <div class="item">
+                <h2>box7</h2>
+            </div>
+            <div class="item">
+                <h2>box8</h2>
+            </div>
+            <div class="item">
+                <h2>box9</h2>
+            </div>
+            <div class="item">
+                <h2>box10</h2>
+            </div>
+            <div class="item">
+                <h2>box11</h2>
+            </div>
+            <div class="item">
+                <h2>box12</h2>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <div class="card text-left">
+                  <img class="card-img-top" src="holder.js/100px180/" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Body</p>
+                  </div>
+                </div>
+                <h2>box13</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+            var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    stagePadding: 250,
+                    margin: 10,
+                    loop: true,
+                    nav: true,
+                    autoplay:true,
+                    autoWidth: true,
+                    center: true,
+                    dragEndSpeed:2000,
+                    autoplaySpeed:2000,
+                    autoplayTimeout:5000,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 4
+                        }
+                    }
+                })
+
+    </script>
+</body>
+</html>

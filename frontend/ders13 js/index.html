@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // console.log("merhaba javascript")
+        // console.log("javascript öğreniyoruz!") /* konsol ekranında görmek için kullanılır */
+        // var x = 5;
+        // var y = 10;
+        // var text = "javascript"
+        // console.log(y)
+        // console.log(x+y) /* + işareti birleştirme veya toplayarak tek değişkene indirir*/
+        // console.log(text , x) /* , işareti farklı değişkenleri ayırarak sıralar */
+        // var toplam = x+y;
+        
+        // toplam = toplam +5 /* atama operatörü; sağdan bakılır değerleri soldaki değişkene kaydeder */
+
+        //toplam = toplam +1
+        //toplam += 1 /* üzerine ekle */
+        //toplam ++ /* arttır */
+//
+        //console.log(toplam)
+        
+        // yorum satırı
+        /* çoklu yorum satırı */
+        /* OPERATÖRLER */
+        /*
+        + toplama
+        - çıkarma
+        * çarpma
+        / bölme
+        ** kare alma
+        % mod alma (kalan değeri verir)
+        */
+        // console.log("OPERATÖRLER");
+        // console.log(x+y);
+        // console.log(x-y);
+        // console.log(x*y);
+        // console.log(y/x);
+        // console.log(y**x);
+        // console.log(x%y);
+        // console.log(10%3);
+        // console.log(32%5);
+
+        /* x değeri 15 olsun, x'i 2 ile çarpıp 8 ile bölümünden kalan nedir? */
+        // var x = 15;
+        // var sonuc = (x*2)%8
+        // console.log("Sonuç:",sonuc)
+        // VERİ TÜRLERİ
+        // number (integer) sayısal ifadeler: 5
+        // String yazısal, metinsel ifadeler, tırnak içerisindeki herşey: "merhaba", "10", "-.,/*-"
+        // Array (liste), [1,2,"hi"]
+        // Object (dictionary): {"key":"value"}
+        // document.write("JAVASCRIPT")
+        // console.log
+        // alert("merhaba heş geldin")
+        // alert("Sonuç: "+sonuc)
+        // var x = 12;
+        // alert(x)
+        // var y = "String ifadedir."
+        // document.write(y)
+        // var z = "12 developer"
+        // console.log(z)
+
+        // var x = 5;
+        // alert(15 / x)
+        // var y = 8;
+        // alert(32 / y)
+        // var first_n = 3;
+        // alert(90 / first_n)
+        // var degisken = 10;
+        // alert(degisken / 100) 
+        
+        var d1 = 10;
+        var d2 = 20;
+        var toplam = d1+d2
+        toplam++
+        // alert(toplam)
+        var d3 = 30;
+        var carpim = d3 * 5;
+        carpim--
+        carpim -= 5
+        carpim = carpim + 6 
+        carpim /= 5
+        console.log("Çarpim Sonucu",carpim);
+
+        var ad = "Berkay";
+        var soyad = "Ülger";
+        var yas = "26";
+        console.log("Merhaba benim adım",ad,"ve soyadım",soyad,"ben",yas,"yaşındayım")
+        console.log("Merhaba benim adım "+ad+" ve soyadım "+soyad+" ben "+yas+" yaşındayım");
+        document.write("Merhaba benim adım " + ad + " ve soyadım " + soyad + " ben " + yas + " yaşındayım")
+
+        // var; tekrardan değişken olarak tanımlanabilir ve istersek değişkeni sonradan oluşturabiliriz.
+        // var let const (değişken oluşturma)
+        // var text = "var değişkeni";
+        // var text = "var merhaba";
+        
+        // let; tekrardan değişken tanımlama izin vermez ama tanımlı değişkeni değişmesine izin verir. Değişkeni kullanmadan önce tanımlamanız gerekiyor.
+        // let text = "let değişkeni";
+        // text = "let merhaba";
+        // console.log(text)
+
+        // const; tekrardan değişken tanımlanmaz. tanımlanan değişkeni değiştiremezsiniz ve kullanmadan önce tanımlamak gerekir.
+        // const text = "const değişkeni";
+        // text = "merhaba const";
+        // console.log(text)
+
+        console.log(10%7);
+        console.log(10%2);
+        console.log(11%3);
+        console.log(20%9);
+        var x = 5;
+        console.log(x%3);
+        let y = 8;
+        console.log(y%2);
+        var first = 3;
+        console.log(first%3);
+        const degisken = 10;
+        console.log(degisken%3);
+        console.log(Math.PI);
+
+        var xx = 10;
+        var yy = 20;
+        // xx = xx + yy;
+        xx += yy
+        console.log(xx);
+
+        var x = 12;
+        x+=3;
+        console.log(x)
+
+        // prompt kullanıcıdan değer almak için kullanılır.
+        //var ad = prompt("Buraya adınızı giriniz:")
+        //ad += " Ülger";
+//
+        //console.log(ad)
+
+        // VERİ DEĞİŞTİRME
+        var x = "10";
+
+        x = Number(x) + 5;
+        //console.log("x değeri:",x) 
+        
+        // ÖRNEK bu sonuçları bulunuz, 30,1218,327,31215
+        /*var s1 = "15";
+        var s2 = "12";
+        var s3 = 3;
+        
+        var sonuc = Number(s1) + Number(s2) + s3
+        console.log("1. Sonuç:",sonuc);
+        sonuc = s2 + (Number(s1)+s3)
+        console.log("2. Sonuç:",sonuc);
+        sonuc = (s3) + String(Number(s1) + Number(s2))
+        console.log("3. Sonuç:",sonuc);
+        sonuc = s3 + s2 + s1
+        console.log("4. Sonuç:",sonuc);*/
+
+        //var p1 = prompt("bir sayı giriniz: ")
+        // 5 ile çarpıp 1 eksiltip konsola yazdırın.
+        //toplam = Number(p1)*5;
+        //toplam--
+        //console.log(typeof toplam);
+
+        // 1. ÖDEV s1="10", s2=5, s3="16", s4=8
+        // bulunması gereken değerler; 1524, 1623, 81615,39
+        /*
+        var s1 = "10";
+        var s2 = 5;
+        var s3 = "16";
+        var s4 = 8;
+
+        var toplam = String(Number(s1)+s2) + String(Number(s3)+s4) 
+        console.log(toplam);
+        toplam = s3 + (Number(s1)+s2+s4)
+        console.log(toplam);
+        toplam = s4 + s3 + (Number(s1) + s2)
+        console.log(toplam);
+        toplam = Number(s1) + Number(s3) + s2 + s4
+        console.log(toplam);*/
+
+        // 2. ÖDEV kullanıcıdan 3 sayı alınıcak bunlar x1,x2,x3 değişkenlerine kaydedilecek gelen değerleri toplayıp 3ile çarpıp 1 ekleyin
+
+        //var x1 = prompt("x1 için değer gir")
+        //var x2 = prompt("x2 için değer gir")
+        //var x3 = prompt("x3 için değer gir")
+        //toplam = (Number(x1)+Number(x2)+Number(x3))*3
+        //toplam++
+        //console.log(toplam)
+        
+    </script>
+    
+</body>
+</html>
