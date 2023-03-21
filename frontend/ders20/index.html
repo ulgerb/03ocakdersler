@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .div1{
+            width: 200px;
+            height: 100px;
+            background: green;
+            box-shadow: 0px 0px 4px 8px #00000030;
+        }
+        input{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        #showpassword{
+            position: absolute;
+            margin: 5px 0px 0px -54px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        header{
+            width: 100%;
+            display: flex;
+        }
+        header nav{
+            width: 100%;
+            height: 50px;
+            background: blueviolet;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .menu{
+            width: 200px;
+            height: 600px;
+            display: none;
+            flex-direction: column;
+            background: #0000007b;
+        }
+        .dropmenu{
+            margin: 20px 0px 0px -20px;
+            display: none;
+            position: absolute;
+            padding: 20px;
+            border: 4px solid black;
+            background: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <nav>
+            <div>Anasayfa</div>
+            <div>
+                <div id="drop">Hakkında</div>
+                <div class="dropmenu">
+                    <div>seçenek 1</div>
+                    <div>seçenek 2</div>
+                    <div>seçenek 3</div>
+                </div>
+            </div>
+            <div>İletişim</div>
+        </nav>
+        <button onclick="navBar()" style="height: 50px;">menu</button>
+        <nav class="menu">
+            <div>Anasayfa</div>
+            <div>Hakkında</div>
+            <div>İletişim</div>
+        </nav>
+    </header>
+    <button onclick="changeHeader()">Değiştir</button>
+    
+    
+    <h2>JS DOM</h2>
+    <a id="clicka" href="#">Şifreyi doğru girersen tıkla</a>
+    <form action="">
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username"><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+
+        <input type="button" id="showpassword" value="Göster" onclick="showPassword()"><br>
+        
+
+        <input type="button" value="Giriş">
+    </form>
+    
+    <div id="clickme" onclick="clickMe(this)">Bana tıkla</div>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, minima!</p>
+    <div class="box1">CLASS DIV</div>
+    <div id="boxid">ID DIV</div>
+
+    <div id="boxid2">boxid2</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

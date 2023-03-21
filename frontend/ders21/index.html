@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html,body{
+            padding: 0;
+            overflow: hidden;
+            min-height: 80vh;
+        }
+        header{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background: #303030;
+            justify-content: space-between;
+        }
+        .btn{
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+        #dropdown{
+            padding: 5px 10px;
+            text-shadow: 2px 2px 8px black;
+            text-decoration: none;
+        }
+        .drop{
+            margin: 170px 0px 0px 0px;
+            width: fit-content;
+            padding: 10px;
+            flex-direction: column;
+            background: #000000be;
+            box-shadow: 2px 2px 8px black;
+            position: absolute;
+            display: none;
+        }
+        .drop>a{
+            padding: 5px;
+            color: white;
+            text-shadow: 2px 2px 8px black;
+            text-decoration: none;
+        }
+        .d-flex{
+            display: flex !important;
+        }
+        .menu{
+            margin: 22px 0px 0px 40px;
+            width: 200px;
+            height: 90vh;
+            background: #303030;
+            box-shadow: 2px 2px 8px black;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            transition: all 1s;
+        }
+        .menushow{
+            transform: translate(-180px, 0px);
+        }
+        .asd{
+            background: gray; width: 200px; height: 50px; padding: 15px; border: 4px solid black;
+        }
+        .move{
+            width: 400px;
+            height: 400px;
+            background: lightblue;
+            border: 4px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #monalisa{
+            width: 100px;
+            height: 40px;
+            background: gray;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #ey1{
+            width: 20px;
+            height: 15px;
+            background: #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #monalisa>div>span{
+            border-radius: 50%;
+        }
+        #ey2{
+            width: 20px;
+            height: 15px;
+            background: #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="d-flex">
+            <div class="btn">
+                <a href="#!" id="dropdown" onclick="DropDown(this)">Dropdown</a>
+                <div class="drop" id="a">
+                    <a href="">Anasayfa</a>
+                    <a href="">Hakkımızda</a>
+                    <a href="">Projeler</a>
+                </div>
+            </div>
+        
+            <div class="btn">
+                <a href="#" id="dropdown" onclick="DropDown(this)">Dropdown</a>
+                <div class="drop" id="b">
+                    <a href="">a</a>
+                    <a href="">b</a>
+                    <a href="">c</a>
+                </div>
+            </div>
+    
+            <div class="btn">
+                <a href="#" id="dropdown" onclick="DropDown(this)">Dropdown</a>
+                <div class="drop" id="b">
+                    <a href="">a</a>
+                    <a href="">b</a>
+                    <a href="">c</a>
+                </div>
+            </div>
+        </div>
+        <div style="margin-right: 20px;">
+            <svg id="hamburger" width="20px" fill="white" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
+            <div class="menu" id="menu">
+                <a href="">Anasayfa</a>
+                <a href="">Hakkında</a>
+                <a href="">İletişim</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="username">Kullanıcı Adı: </label>
+            <input type="text" name="username" id="username"><br>
+
+            <label for="password">Şifre: </label>
+            <input type="password" name="password" id="password"><br>
+
+            <button type="button" id="login" onclick="disableB()" name="login" value="login">Giriş</button>
+            
+        </form>
+
+        <div class="move" id="move">
+            <div id="monalisa">
+                <div id="ey1"><span style="width: 4px; height: 4px; background: white;"></span></div>
+                <div id="ey2"><span style="width: 4px; height: 4px; background: white;"></span></div>
+            </div>
+        </div>
+        
+        <div id="todo">
+            
+        </div>
+    </main>
+    
+    <script>
+        // ÖDEV
+        // dropdown menü yapılıcak, ok
+        //  hamburger menu tasarlanıcak,
+        // form oluşturun oluşturulan formda buton olucak butona basıldığında
+        //  form içindeki inputlar disabled olucak tekrar tıklandığın etkin hale gelicek
+
+        const move = document.getElementById("move")
+        const ey1 = document.getElementById("ey1")
+        const ey2 = document.getElementById("ey2")
+        move.addEventListener("mousemove",(e)=>{
+            console.log("Y",e.offsetY -200);
+            var x = (e.offsetX - 200)/20;
+            var y = (e.offsetY - 200)/20;
+            ey1.style.transform = "translate("+x+"px, "+y*1.3+"px)";
+            ey2.style.transform = "translate(" + x*1.6 + "px, " + y + "px)";
+           
+        })
+
+        const disableB = ()=>{
+            var username = document.getElementById("username")
+            var password = document.getElementById("password")
+            var todo = document.getElementById("todo")
+            username.toggleAttribute("disabled")
+            password.toggleAttribute("disabled")
+            console.log(username.value);
+
+            todo.innerHTML += "<div class='asd'>"+ username.value +"</div>"+ "<div class='asd'>" + password.value + "</div>";
+        }
+        
+
+        
+        console.log("SCRIPT YÜKLENDİ");
+
+        var hamburger = document.getElementById("hamburger")
+        hamburger.addEventListener("click", ()=>{
+            var menu = document.getElementById("menu")
+            menu.classList.toggle("menushow")
+            
+        })
+        
+        
+        // var change = true;
+        
+        const DropDown = (e)=>{
+            var drops = document.querySelectorAll(".drop")
+            var drop = e.nextElementSibling;
+
+            var change1 =  drop.className.indexOf("d-flex")
+            console.log(drop.className);
+            console.log(change1);
+            
+            drops.forEach(item=>{
+                item.classList.remove("d-flex")
+                console.log("kaldırıldı");
+            })
+            
+            if (change1 != -1){
+                drop.classList.remove("d-flex")
+            }else{
+                drop.classList.add("d-flex");
+            }
+            //drop.classList.toggle("d-flex")
+            /*
+            console.log(drop);
+            if(change){
+                drop.style.display = "flex";
+            }else{
+                drop.style.display = "none";
+            }
+            console.log("change:",change);
+            change = !change
+            */
+        }
+        
+    </script>
+</body>
+</html>

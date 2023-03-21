@@ -190,6 +190,7 @@ if (fname[0] === fname[0].toUpperCase() && surname[0] === surname[0].toUpperCase
 //     console.log(s1+s2);
 // }
 
+
 // ÖDEV 1 # === sisteme giriş yaptırma kullanıcı adı ve şifre ile
 
 
