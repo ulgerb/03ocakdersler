@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: red;
+            display: none;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .border{
+            border: 4px solid black;
+            box-shadow: 4px 4px 10px #00000030;
+        }
+        .bg{
+            background: green !important;
+            scale: 1.4;
+        }
+        .div1{
+            width: 300px;
+            height: 200px;
+            background: #615717;
+        }
+        .bx{
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 50%;
+            
+        }
+        .bx1{background-color: darkred;}
+        .bx2{background-color: blue;}
+        .bx3{background-color: green;}
+        .bx4{background-color: purple;}
+        #kutuid2{
+            width: 200px;
+            height: 200px;
+            background: green;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <main style="width: 100%;">
+        <div class="bx1 bx"></div>
+        <div class="bx2 bx"></div>
+        <div class="bx3 bx"></div>
+        <div class="bx4 bx"></div>
+    </main>
+    <div style="display: flex;">
+        <div id="kutuid2">SOL</div>
+        <div id="kutuid">SAĞ</div>
+    </div>
+    <br><br>
+
+    <div>
+        <h5 class="drop-link">Anasayfa</h5>
+        <div class="drop-madde">
+            <p>1. madde</p>
+            <p>2. madde</p>
+            <p>3. madde</p>
+            <p>4. madde</p>
+        </div>
+    </div>
+    
+
+    <div class="div2"></div>
+    
+    <div class="div1"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <div class="box3"></div>
+    
+    <script src="js/script.js"></script>
+    <script>
+
+        var kutuid = $("#kutuid")
+
+        kutuid.click(function(){
+            $(".bx1").animate({
+                margin:"20px",
+                width:"200px",
+                translate:"200px"
+            },1000, function () {
+                $(".bx2").animate({
+                    opacity:"0.4",
+                    width: "50px",
+                    translate: "100px"
+                }, 1000,)})
+
+            $(".bx3").animate({
+                left: "+=50"
+            },50)
+        })
+
+        
+
+        $("#kutuid2").click(function(){
+             $(".bx3").animate({
+                left: "-=50"
+            }, 50)
+        })
+
+        window.$("#kutuid2").keypress("d");
+        
+        
+
+        // 1) id olarak seçin, seçilen id css özellikleri jq ile verilecektir. width height 150px, bg red, 
+
+        // 2) dropdown toggle yapılıcak, tıklanınca menü açılıp kapanıcak
+
+        var droplink = $(".drop-link")
+        var dropmadde = $(".drop-madde")
+        dropmadde.slideToggle(0)
+        
+        droplink.click(function(){
+            dropmadde.slideToggle(500)
+        })
+        
+        var kutuid = $("#kutuid")
+
+        kutuid.css({
+            width: 200,
+            height: 200,
+            background: "red"
+        })
+        
+        
+        var x = 15;
+        x==10 ? x++ : x--;
+        console.log(x);
+
+
+
+        function tl(sec){
+            return document.querySelector(sec)
+        }
+        function style(sec,css){
+            return sec.style.cssText = "+"+ css +"+";
+        }
+
+        style(tl(".div2"), "width:200px;height:200px;background:red;")
+        
+        console.log(tl(".div2"))
+
+        
+        var div1 = $(".div1")
+        function shToggle(){
+            div1.toggle(2000)
+            
+            
+        }
+        
+        $(".div2").click(function (){
+            div1.slideToggle(200)
+        })
+        
+        
+        
+        
+        var box3 = $(".box3")
+
+        box3.css({
+            width:200,
+            height:200,
+            background:"blue",
+        })
+
+        function infSlide(){
+            box3.slideUp(2000,function(){  
+                box3.slideDown(1000, infSlide())
+            })
+        }
+
+            
+
+        
+        $(".box1").fadeIn(5000, ()=>{
+            $(".box1").css({
+                "background": "black",
+                border: "4px solid red",
+            })
+        })
+
+        $(".box1").fadeOut(4000)
+
+        var box2 = $(".box2")
+
+        box2.fadeToggle(2000)
+        $(".box2").fadeToggle(2000)
+        box2.addClass("border")
+        box2.removeClass("border")
+        box2.toggleClass("border")
+       
+        
+        box2.hover(function(){
+            $(this).addClass("bg");
+        },
+            /*function () {
+                $(this).addClass("bg");
+            }, function () {
+                $(this).removeClass("bg");
+            }*/
+        )
+
+        
+    </script>
+</body>
+</html>
