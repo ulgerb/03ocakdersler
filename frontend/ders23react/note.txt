@@ -1,0 +1,17 @@
+node_modules node.js / react.js kütüphanesidir.
+public index.html sayfamızın bulunduğu yer
+src css, js ve diğer dosyalarmızın, componentlerimizin bulunduğu yer
+
+React Terminal Kodları
+npx create-react-app <dosya adı>
+npm start
+
+
+Terminal Kodları
+NOT: Yön tuşlarıyla önceki yazılan kodları getirebiliriz
+cd: dosyaların içine girer yada dışına çıkar
+mkdir: klasör oluşturma
+rmdir: klasör silme
+dir / ls : olduğunuz dizindeki dosyaları görüntüler
+cls / clear : terminali temizler
+
